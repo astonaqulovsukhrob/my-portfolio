@@ -42,7 +42,7 @@ body.active {
   border: none;
   padding: 0.6rem 1rem;
   margin-top: 15px;
-  background: #547a7b;
+  background: #3e6ff4;
   border-radius: 6px;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -54,7 +54,7 @@ body.active {
 }
 
 .btn:hover {
-  background: #6a8a8b;
+  background: #527cf0;
   cursor: pointer;
   letter-spacing: 3px;
 }
@@ -64,6 +64,7 @@ body.active {
   font-size: 1.5rem;
   text-align: center;
   padding: 2rem 0;
+  margin-bottom: 4rem;
 }
 
 .text::after {
@@ -203,7 +204,6 @@ body.active {
 
 .header .main-header_icon i:nth-child(2) {
   display: none;
-  transition: 0.3s;
 }
 
 .header .main-header_icon.active i:nth-child(2) {
@@ -220,7 +220,7 @@ body.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .home .main-home {
@@ -231,12 +231,12 @@ body.active {
 }
 
 .home .main-home .main-home_title h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .home .main-home .main-home_title h1 span {
-  color: #668788;
+  color: #3e6ff4;
 }
 
 .home .main-home .main-home_img {
@@ -258,7 +258,6 @@ body.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
 .about .main-about {
@@ -313,14 +312,14 @@ body.active {
 
 .skills .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  height: 90vh;
+  column-gap: 2rem;
 }
 
 .skills-text {
   position: absolute;
-  top: 10rem;
+  top: 8rem;
 }
 
 .skills .skills-container .main-skills_data {
@@ -328,7 +327,6 @@ body.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
   margin-bottom: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -366,8 +364,8 @@ body.active {
 }
 
 .skills .main-skills_img img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Work section */
@@ -397,7 +395,7 @@ body.active {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .hidden {
     display: block;
   }
@@ -438,5 +436,35 @@ body.active {
   .header .main-header_icon {
     position: absolute;
     right: 70px;
+  }
+
+  /* Home section */
+  .home .main-home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .home .main-home .main-home_img {
+    width: 100%;
+  }
+
+  /* About section */
+  .about .main-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .main-about_img {
+    height: 300px;
+  }
+
+  .about .main-about_title {
+    width: 100%;
+  }
+
+  /* Skills */
+  .skills-text {
+    position: absolute;
+    top: 6rem;
   }
 }

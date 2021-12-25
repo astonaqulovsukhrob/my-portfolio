@@ -59,5 +59,5 @@ sr.reveal(
 sr.reveal(".main-home_img, .about__subtitle, .about__text, .main-skills_img", {
   delay: 400,
 });
-sr.reveal(".main-skills_data", { interval: 200 });
+sr.reveal(".main-skills_data,.work_img", { interval: 200 });
 // sr.reveal(".home__social-icon", { interval: 200 });
