@@ -100,12 +100,11 @@ sr.reveal(".main-home_img, .about__subtitle, .about__text, .main-skills_img", {
   delay: 400,
 });
 sr.reveal(
-  ".main-skills_data,.work_img, .contact-input, .btn, .text, .footer-text, .footer-copy",
+  ".main-skills_data,.work_img, .contact-input, .btn, .text, .footer-text, .footer-copy, .icon",
   {
     interval: 200,
   }
 );
-sr.reveal(".icon", { interval: 200 });
 
 // Preserve 3d
 VanillaTilt.init(document.querySelectorAll(".icon li a "), {
