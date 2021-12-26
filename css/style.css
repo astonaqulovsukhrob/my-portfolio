@@ -27,14 +27,57 @@ body {
 
 body.active {
   --color: #fff;
-  --header: #000;
+  --header: #141415;
   --box-shadow: rgba(150, 148, 148, 0.15);
-  background: #000;
+  background: #141415;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: #141415;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  transition: all 0.5s ease;
+  z-index: 30;
+}
+
+.main-loader {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.main-loader::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 7px dotted #3e6ff4;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  z-index: -2;
 }
 
 #progress-bar {
   position: fixed;
-  top: 55px;
+  top: 60px;
   left: 0;
   height: 8px;
   background: linear-gradient(to right, #ff5f6d, #ffc371);
@@ -42,7 +85,7 @@ body.active {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   transition: width 0.2s ease-out;
-  z-index: 100;
+  z-index: 20;
 }
 
 img {
@@ -114,7 +157,7 @@ img {
 
 .header.active {
   padding: 0.2rem 0;
-  box-shadow: 0 1px 10px var(--color);
+  box-shadow: 0 1px 5px var(--color);
 }
 
 .header .main-header {
@@ -451,7 +494,7 @@ img {
 /* Footer section */
 .footer {
   height: 25vh;
-  background: #283149;
+  background: #1e1e20;
   color: #fff;
 }
 
@@ -534,7 +577,7 @@ img {
 
 @media (max-width: 668px) {
   #progress-bar {
-    top: 62px;
+    top: 70px;
   }
 
   .hidden {

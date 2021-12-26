@@ -81,7 +81,7 @@ const sr = ScrollReveal({
 
 sr.reveal(
   ".main-home_title, .main-about_title, .main-about_img,  .skills-text",
-  {}
+ {}
 );
 sr.reveal(".main-home_img, .about__subtitle, .about__text, .main-skills_img", {
   delay: 400,
@@ -98,4 +98,16 @@ sr.reveal(".icon", { interval: 200 });
 VanillaTilt.init(document.querySelectorAll(".icon li a "), {
   max: 30,
   speed: 400,
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  const main = document.querySelector("main");
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 200);
+  }, 950);
 });
