@@ -12,8 +12,7 @@ menuToggle.addEventListener("click", menu);
 
 // Spinner 
 window.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loader"),
-        main = document.querySelector("main");
+  const loader = document.querySelector(".loader");
 
   setTimeout(() => {
     loader.style.opacity = "0";
