@@ -100,6 +100,8 @@ VanillaTilt.init(document.querySelectorAll(".icon li a "), {
   speed: 400,
 });
 
+
+// Spinner 
 window.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
   const main = document.querySelector("main");
