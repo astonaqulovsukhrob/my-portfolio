@@ -10,6 +10,19 @@ window.addEventListener("scroll", scrollActive);
 mainIcon.addEventListener("click", icon);
 menuToggle.addEventListener("click", menu);
 
+// Spinner 
+window.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  const main = document.querySelector("main");
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 200);
+  }, 950);
+});
+
 // Scroll section active
 function scrollActive() {
   // navbaar
@@ -98,18 +111,4 @@ sr.reveal(".icon", { interval: 200 });
 VanillaTilt.init(document.querySelectorAll(".icon li a "), {
   max: 30,
   speed: 400,
-});
-
-
-// Spinner 
-window.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loader");
-  const main = document.querySelector("main");
-
-  setTimeout(() => {
-    loader.style.opacity = "0";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 200);
-  }, 950);
 });
