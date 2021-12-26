@@ -27,9 +27,9 @@ body {
 
 body.active {
   --color: #fff;
-  --header: #000;
+  --header: #141415;
   --box-shadow: rgba(150, 148, 148, 0.15);
-  background: #000;
+  background: #141415;
 }
 
 #progress-bar {
