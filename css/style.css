@@ -239,7 +239,7 @@ img {
 
 /* Home section */
 .home {
-  padding: 4rem 0 5rem;
+  padding: 6rem 0 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,7 +588,7 @@ img {
   .home .main-home {
     flex-direction: column;
     align-items: stretch;
-    gap: 2rem;
+    gap: 5rem;
   }
 
   .home .main-home .main-home_title h1 {
@@ -606,10 +606,26 @@ img {
   }
 
   .about .main-about_img {
+    width: 250px;
     height: 300px;
   }
 
   .about .main-about_title {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .header .main-header {
+    height: 10vh;
+  }
+  /* Home section*/
+  .home {
+    padding: 4rem 0 5rem;
+  }
+  .home .main-home {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
   }
 }
