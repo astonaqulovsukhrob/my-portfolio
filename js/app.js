@@ -1,10 +1,10 @@
-const header = document.querySelector(".header");
-const menuToggle = document.querySelector(".main-header_menu");
-const nav = document.querySelector(".nav");
-const mainIcon = document.querySelector(".main-header_icon");
-const body = document.querySelector("body");
-const sections = document.querySelectorAll("section[id]");
-const navLink = document.querySelectorAll(".nav-link");
+const header = document.querySelector(".header"),
+ menuToggle = document.querySelector(".main-header_menu"),
+ nav = document.querySelector(".nav"),
+ mainIcon = document.querySelector(".main-header_icon"),
+ body = document.querySelector("body"),
+ sections = document.querySelectorAll("section[id]"),
+ navLink = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", scrollActive);
 mainIcon.addEventListener("click", icon);
@@ -12,8 +12,8 @@ menuToggle.addEventListener("click", menu);
 
 // Spinner 
 window.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loader");
-  const main = document.querySelector("main");
+  const loader = document.querySelector(".loader"),
+        main = document.querySelector("main");
 
   setTimeout(() => {
     loader.style.opacity = "0";
