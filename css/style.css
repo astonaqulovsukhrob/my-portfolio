@@ -152,7 +152,7 @@ img {
   left: 0;
   right: 0;
   background: var(--header);
-  z-index: 20;
+  z-index: 18;
 }
 
 .header.active {
@@ -577,7 +577,8 @@ img {
 
 @media (max-width: 668px) {
   #progress-bar {
-    top: 70px;
+    top: 65px;
+    z-index: 20;
   }
 
   .hidden {
