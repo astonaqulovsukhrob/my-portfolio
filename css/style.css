@@ -131,6 +131,7 @@ img {
 
 .btn a {
   color: #3e6ff4;
+  outline: none;
 }
 
 .btn:hover a {
@@ -499,15 +500,16 @@ img {
 .work .work_content {
   backdrop-filter: blur(8px);
   position: absolute;
-  width: 365px;
-  height: 245px;
+  width: 361px;
+  height: 210px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transform: translateY(-300%);
+  transform: translateY(-350%);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .work .work_content h3 {
@@ -574,7 +576,7 @@ img {
   outline: none;
 }
 
-.contact_form_input textarea {
+.contact_form_input .contact_textarea {
   width: 100%;
   border: 2px solid var(--input_color);
   border-radius: 8px;
@@ -585,14 +587,14 @@ img {
   outline: none;
 }
 
-.contact_form_input textarea::placeholder {
+.contact_form_input .contact_textarea::placeholder {
   position: absolute;
   left: 20px;
   top: 10px;
 }
 
 .contact-input:focus,
-.contact_form_input textarea:focus {
+.contact_form_input .contact_textarea:focus {
   border-color: #3e6ff4;
 }
 

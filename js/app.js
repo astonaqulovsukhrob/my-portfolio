@@ -72,7 +72,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 1000,
-  delay: 100,
+  delay: 150,
 });
 
 sr.reveal(
@@ -83,7 +83,7 @@ sr.reveal(".main-home_img, .about__subtitle, .about__text, .main-skills_img", {
   delay: 100,
 });
 sr.reveal(
-  ".main-skills_data,.work_card, .contact-input, .btn, .text, .footer-text, .footer-copy, .icon",
+  ".main-skills_data,.work_card, .contact-input, .contact_textarea, .btn, .text, .footer-text, .footer-copy, .icon",
   {
     interval: 100,
     delay: 100,
