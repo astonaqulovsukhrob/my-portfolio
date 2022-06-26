@@ -496,24 +496,17 @@ img {
   font-size: 1rem;
 }
 
-.work .work_content a {
-  text-decoration: none;
-  color: rgb(243, 47, 57);
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.work .work_content a:hover {
+.work .work_content .work_img:hover {
   color: rgb(238, 88, 95);
   cursor: pointer;
 }
 
-.work .main-work_img a {
+.work .main-work_img .work_img {
   overflow: hidden;
   border-radius: 10px;
 }
 
-.work .main-work_img a img {
+.work .main-work_img .work_img img {
   width: 100%;
   overflow: hidden;
   transition: 0.5s;
