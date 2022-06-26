@@ -503,7 +503,7 @@ img {
 
 .work .main-work_img .work_img {
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .work .main-work_img .work_img img {
