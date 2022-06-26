@@ -333,15 +333,17 @@
       <h2 class="text">Contact</h2>
       <div class="container">
         <form action="" class="contact-form">
-          <input type="text" placeholder="Name" class="contact-input" />
-          <input type="email" placeholder="Email" class="contact-input" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="8"
-            class="contact-input"
-          ></textarea>
+          <div class="contact_form_input">
+              <div>
+          <input  type="text" name="name" placeholder="Name" class="contact-input" />
+          <input type="email" name="email" placeholder="Email" class="contact-input" />
+          </div>
+          <div>
+            <input type="number" name="number" placeholder="Nomer" class="contact-input">
+            <textarea name="" id=""  rows="0" placeholder="Izoh"></textarea>
+            <!-- <input type="text" name="description" placeholder="Izoh" class="contact-input"> -->
+          </div>
+          </div>
           <button class="btn">
             Submit
             <i class="fas fa-arrow-right"></i>
