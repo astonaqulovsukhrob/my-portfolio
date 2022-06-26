@@ -471,9 +471,11 @@ img {
 }
 
 .work .work_card {
-  border: 1px solid #d5d5d5;
   transition: 0.5s;
   overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid #d5d5d5;
+  height: 97%;
 }
 
 .work .work_content {
