@@ -20,6 +20,20 @@
   --box-shadow: rgba(37, 37, 37, 0.15);
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px !important;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px rgb(160, 160, 160); */
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
 body {
   transition: 0.5s;
   color: var(--color);
@@ -434,6 +448,10 @@ img {
   width: 40%;
 }
 
+.skills .main-skills_img {
+  border: 1px solid #d5d5d5;
+}
+
 .skills .main-skills_img img {
   max-width: 100%;
   border-radius: 10px;
@@ -449,6 +467,43 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   overflow: hidden;
+  position: relative;
+}
+
+.work .work_card {
+  border: 1px solid #d5d5d5;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.work .work_content {
+  backdrop-filter: blur(8px);
+  position: absolute;
+  width: 365px;
+  height: 245px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-300%);
+  transition: 0.5s;
+}
+
+.work .work_content h3 {
+  font-size: 1rem;
+}
+
+.work .work_content a {
+  text-decoration: none;
+  color: rgb(243, 47, 57);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.work .work_content a:hover {
+  color: rgb(238, 88, 95);
+  cursor: pointer;
 }
 
 .work .main-work_img a {
@@ -464,6 +519,12 @@ img {
 
 .work .main-work_img a:hover img {
   transform: scale(1.1);
+}
+
+.work .work_card:hover .work_content {
+  z-index: 100;
+  /* display: flex; */
+  transform: translateY(0%);
 }
 
 /* Contact section */

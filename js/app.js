@@ -1,16 +1,16 @@
 const header = document.querySelector(".header"),
- menuToggle = document.querySelector(".main-header_menu"),
- nav = document.querySelector(".nav"),
- mainIcon = document.querySelector(".main-header_icon"),
- body = document.querySelector("body"),
- sections = document.querySelectorAll("section[id]"),
- navLink = document.querySelectorAll(".nav-link");
+  menuToggle = document.querySelector(".main-header_menu"),
+  nav = document.querySelector(".nav"),
+  mainIcon = document.querySelector(".main-header_icon"),
+  body = document.querySelector("body"),
+  sections = document.querySelectorAll("section[id]"),
+  navLink = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", scrollActive);
 mainIcon.addEventListener("click", icon);
 menuToggle.addEventListener("click", menu);
 
-// Spinner 
+// Spinner
 window.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
 
@@ -48,22 +48,6 @@ function scrollActive() {
   });
 }
 
-// animation bar
-const main = document.querySelector("main");
-const progressBar = document.querySelector("#progress-bar");
-
-const animateProgressBar = () => {
-  let sceollDistance = -main.getBoundingClientRect().top;
-  let progressWidth =
-    (sceollDistance /
-      (main.getBoundingClientRect().height -
-        document.documentElement.clientHeight)) *
-    100;
-  const value = Math.floor(progressWidth);
-  progressBar.style.width = value + "%";
-};
-window.addEventListener("scroll", animateProgressBar);
-
 // navbar link
 navLink.forEach((link) => {
   link.addEventListener("click", () => {
@@ -87,26 +71,27 @@ function menu() {
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
-  duration: 2000,
-  delay: 200,
+  duration: 1000,
+  delay: 100,
 });
 
 sr.reveal(
   ".main-home_title, .main-about_title, .main-about_img,  .skills-text",
- {}
+  {}
 );
 sr.reveal(".main-home_img, .about__subtitle, .about__text, .main-skills_img", {
-  delay: 400,
+  delay: 100,
 });
 sr.reveal(
-  ".main-skills_data,.work_img, .contact-input, .btn, .text, .footer-text, .footer-copy, .icon",
+  ".main-skills_data,.work_card, .contact-input, .btn, .text, .footer-text, .footer-copy, .icon",
   {
-    interval: 200,
+    interval: 100,
+    delay: 100,
   }
 );
 
 // Preserve 3d
 VanillaTilt.init(document.querySelectorAll(".icon li a "), {
   max: 30,
-  speed: 400,
+  speed: 100,
 });
