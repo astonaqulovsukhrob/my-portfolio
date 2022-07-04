@@ -10,6 +10,8 @@ window.addEventListener("scroll", scrollActive);
 mainIcon.addEventListener("click", icon);
 menuToggle.addEventListener("click", menu);
 
+// function btnClick() {}
+
 // Spinner
 window.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loader");
