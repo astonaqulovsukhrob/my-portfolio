@@ -652,7 +652,7 @@ img {
   font-size: 1em;
   transform-style: preserve-3d;
   perspective: 500px;
-  box-shadow: 0 1px 5px var(--color);
+  box-shadow: 0 1.1px 5px var(--color);
   transition: background 0.25s;
 }
 
