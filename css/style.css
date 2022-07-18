@@ -507,7 +507,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transform: translateY(-350%);
+  transform: translateY(-355%);
   transition: 0.5s;
   cursor: pointer;
 }
